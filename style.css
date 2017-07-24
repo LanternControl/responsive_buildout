@@ -76,6 +76,7 @@ header {
 #main_nav{
     text-align: center;
     align-content: center;
+    display: flex;
     
 
 }
@@ -90,6 +91,7 @@ header {
 }
 
 #main_nav a:hover{
+    display: flex;
     background: #ddddff;
 }
 
@@ -137,12 +139,40 @@ a {
     
     }
     
+    header {
+        display: flex;
+
+    }
+    
+    main_nav {
+        flex-flow: row;
+        
+    }
+    
+    a {
+        justify-content: flex-end;
+    }
+    
+    p {
+        width: 325px;
+        height: 20%;
+    }
+    #main_content {
+        flex-flow: nowrap row;
+        justify-content: center
+        width: 100%;
+        
+    }
+    
+    
 }
 
 /********** Desktop Mode **********/
 
 @media (min-width: 1100px){
-    
+    p {
+        width: 800px;
+    }
     
 }
 
